@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="input-group mb-3" id="app">
+            <form >
+                <div class="form-group"> 
+                    <input type="password" name="password" class="form-control" id="password" v-model="form.password">
+                    <label for="">{{form.password}}  </label>
+                   
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" v-on:click="formSubmit" type="button" >Show Password</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+<p id="display-data"></p>
+
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
